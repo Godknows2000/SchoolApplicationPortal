@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ZHS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SAP.Web.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow fixed-top" style="background: #2C3D90;">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">ZHS Application portal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Index"><i class="fa-solid fa-house"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Index"><i class="fa-solid fa-bullseye"></i> Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Index"><i class="fa-solid fa-gears"></i> Config</a>
+                        </li>
+                    </ul>
+                    <partial name="Login" />
+                </div>
+            </div>
+        </nav>
+    </header>
+        <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+        <div class="d-flex flex-column flex-shrink-0 py-3 px-1">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item active">
+                    <a asp-page="Application/Index" class="nav-link" aria-current="page">
+                        <i class="fa-solid fa-folder-open"></i>
+                        New Application
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-page="" class="nav-link">
+                        <i class="fa-solid fa-rotate-left"></i> 
+                        Resume Application
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-page="Track/Index" class="nav-link">
+                        <i class="fa-solid fa-magnifying-glass-arrow-right"></i> 
+                        Track Application
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="" asp-page="Home/BasicDetails" class="nav-link">
+                        <i class="fa-solid fa-book"></i> 
+                        Subjects Offered
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-page="" class="nav-link">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        Registration Help
+                    </a>
+                </li>
+            </ul>
+            <hr />
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted position-relative">
+        <div class="container">
+            &copy; 2023 - ZHS Application portal - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <div class="small text-muted">Powered by <a target="_blank" href="https://www.google.com">SkyLine Solutions.</a></div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/knockout/knockout-latest.min.js" asp-append-version="true"></script>
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

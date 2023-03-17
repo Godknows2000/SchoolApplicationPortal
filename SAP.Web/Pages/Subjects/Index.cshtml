@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+
+<h3 class="mt-2">Subjects</h3>
+<div class="text-end m-2">
+    <a asp-page="Add" class="btn btn-primary mt-3"><i class="fa-solid fa-plus"></i> Add new..</a>
+</div>
+<table class="table table-sm table-striped table-hover border-bottom">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Creation date</th>
+        </tr>
+    </thead>
+    @if (Model.Subjects != null)
+    {
+        @foreach (var item in Model.Subjects)
+        {
+            <tbody>
+                <tr>
+                    <td><a asp-page="./Details" asp-route-id="@item.Id">@item.Name</a></td>
+                </tr>
+            </tbody>
+        }
+    }
+</table>

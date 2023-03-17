@@ -1,0 +1,922 @@
+﻿@page
+@model IndexModel
+
+<div class="row">
+    <div class="col-md">
+
+    </div>
+    <div class="col-md-8 me-5">
+        <div class="card" id="card1">
+            <div class="card-header">
+
+            </div>
+            <div class="card-body">
+                <h3 class="">Basic details</h3>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Title</option>
+                              <option value="1">Mr</option>
+                              <option value="2">Miss</option>
+                            </select>
+                            <label for="floatingSelect">Title</label>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Surname</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="date" class="form-control" id="floatingPassword">
+                        <label for="floatingPassword">Birth date</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="nationality">
+                            <label for="floatingInput">Nationality</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="country">
+                            <label for="floatingInput">Country of birth</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="nationality">
+                            <label for="floatingInput">National Id</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Disability</option>
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                            <label for="floatingSelect">Disability</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <label class="text font-weight-bold">Gender</label>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                            Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mt-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Sponsors</option>
+                        <option value="1">Self</option>
+                        <option value="2">Other</option>
+                    </select>
+                    <label for="floatingSelect">Sponsors</label>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="text-start col-md">
+                        <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+                    </div>
+                    <div class="text-end col-md">
+                        <a class="btn btn-success" id="btn1Next"><i class="fa-solid fa-arrow-right"></i> Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md">
+
+    </div>
+    <div class="col-md-8 me-5">
+        <div class="card collapse" id="card2">
+            <form method="post">
+                <div class="card-header"></div>
+                <div class="card-body">
+                    <h3 class="">Contact details</h3>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" >
+                                <label for="floatingInputGrid">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="phone number">
+                                <label for="inputPassword4">Phone number</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md form-floating mt-3">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        <label for="inputAddress">Address</label>
+                    </div>
+                    <div class="col-12 form-floating mt-3">
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        <label for="inputAddress2">Address 2</label>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="City">
+                                <label for="floatingInputGrid">City</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example"><option selected>Choose....</option>
+                                    <option value="1">Harare</option>
+                                    <option value="2">Bulawayo</option>
+                                    <option value="3">Manicaland</option>
+                                </select>
+                                <label for="floatingSelectGrid">Province</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInputGrid" placeholder="next of kin" >
+                                <label for="floatingInputGrid">Next of Kin Full name</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="phone number">
+                                <label for="inputPassword4">Next of Kin phone number</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="text-start col-md">
+                            <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+                        </div>
+                        <div class="text-end col-md">
+                            <a class="btn btn-success" id="btn2Next"><i class="fa-solid fa-arrow-right"></i> Next</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md">
+
+    </div>
+    <div class="col-md-8 me-5">
+        <div class="card collapse" id="card3">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <h3 class="">Ordinary Level Results</h3>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="form-floating mt-3">
+                            <input type="email" class="form-control" id="floatingInputGrid">
+                            <label for="floatingInputGrid">Center number</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating mt-3">
+                            <input type="email" class="form-control" id="floatingInputGrid" >
+                            <label for="floatingInputGrid">Candidate number</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md mt-4">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelectGrid">
+                                <option class="text-muted">Exam session</option>
+                                <option value="1">June</option>
+                                <option value="2">November</option>
+                            </select>
+                            <label for="floatingSelectGrid">Exam session</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="date" class="form-control" id="floatingPassword">
+                            <label for="floatingPassword">Year written</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                <option >Select subject..</option>
+                                <option value="1">English</option>
+                                <option value="2">Mathematics</option>
+                                <option value="3">Geography</option>
+                            </select>
+                            <label for="floatingSelectGrid">Subject</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">A</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">B</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">C</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2 mt-3">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                <option >Select subject..</option>
+                                <option value="1">English</option>
+                                <option value="2">Mathematics</option>
+                                <option value="3">Geography</option>
+                            </select>
+                            <label for="floatingSelectGrid">Subject</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">A</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">B</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">C</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2 mt-3">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                <option >Select subject..</option>
+                                <option value="1">English</option>
+                                <option value="2">Mathematics</option>
+                                <option value="3">Geography</option>
+                            </select>
+                            <label for="floatingSelectGrid">Subject</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">A</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">B</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">C</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2 mt-3">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                <option >Select subject..</option>
+                                <option value="1">English</option>
+                                <option value="2">Mathematics</option>
+                                <option value="3">Geography</option>
+                            </select>
+                            <label for="floatingSelectGrid">Subject</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">A</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">B</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">C</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2 mt-3">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                <option >Select subject..</option>
+                                <option value="1">English</option>
+                                <option value="2">Mathematics</option>
+                                <option value="3">Geography</option>
+                            </select>
+                            <label for="floatingSelectGrid">Subject</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">A</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">B</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">C</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 mt-2">
+                    <label for="formFileMultiple" class="form-label">Upload Ordinary level results</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                <a class="btn btn-success" id="btn3Next"><i class="fa-solid fa-arrow-right"></i> Next</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md">
+
+    </div>
+    <div class="col-md-9 me-5">
+        <div class="card collapse" id="card4">
+            <div class="card-header"></div>
+            <div class="card-body bg-light">
+                <h3 class="">Choose combination</h3>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Arts
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-md">
+                                        <div class="">
+                                            <label for="floatingSelectGrid" class="text-secondary">Subjects</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md ms-5">
+                                        <div class="text-muted form-check-inline">
+                                            <label class="form-check-label" for="inlineRadio1">First choice</label>
+                                        </div>
+                                        <div class="text-muted form-check-inline">
+                                            <label class="form-check-label" for="inlineRadio2">Second choice</label>
+                                        </div>
+                                        <div class="text-muted form-check-inline">
+                                            <label class="form-check-label" for="inlineRadio3">Third choice</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-2">
+                                    <div class="col-md">
+                                        <div class="mt-3">
+                                            <label>Mathematics</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md mt-4 ms-5">
+                                        <div class="form-check form-check-inline ms-5">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        </div>
+                                        <div class="form-check form-check-inline ms-5">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        </div>
+                                        <div class="form-check form-check-inline ms-5">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-2">
+                                    <div class="col-md">
+                                        <div class="mt-3">
+                                            <label>Physics</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Chemistry</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Biology</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Computer Science</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Geography</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>History</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+              </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Commercials
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="row g-2 mb-3">
+                    <div class="col-md">
+                        <div class="">
+                            <label for="floatingSelectGrid" class="text-secondary">Subjects</label>
+                        </div>
+                    </div>
+                    <div class="col-md ms-5">
+                        <div class="text-muted form-check-inline">
+                            <label class="form-check-label" for="inlineRadio1">First choice</label>
+                        </div>
+                        <div class="text-muted form-check-inline">
+                            <label class="form-check-label" for="inlineRadio2">Second choice</label>
+                        </div>
+                        <div class="text-muted form-check-inline">
+                            <label class="form-check-label" for="inlineRadio3">Third choice</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Mathematics</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Physics</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Chemistry</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Biology</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Computer Science</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Geography</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>History</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+              </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Sciences
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="row g-2 mb-3">
+                    <div class="col-md">
+                        <div class="">
+                            <label for="floatingSelectGrid" class="text-secondary">Subjects</label>
+                        </div>
+                    </div>
+                    <div class="col-md ms-5">
+                        <div class="text-muted form-check-inline">
+                            <label class="form-check-label" for="inlineRadio1">First choice</label>
+                        </div>
+                        <div class="text-muted form-check-inline">
+                            <label class="form-check-label" for="inlineRadio2">Second choice</label>
+                        </div>
+                        <div class="text-muted form-check-inline">
+                            <label class="form-check-label" for="inlineRadio3">Third choice</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Mathematics</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Physics</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Chemistry</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Biology</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Computer Science</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>Geography</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-md">
+                        <div class="mt-3">
+                            <label>History</label>
+                        </div>
+                    </div>
+                    <div class="col-md mt-4 ms-5">
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        </div>
+                        <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        </div>
+                    </div>
+                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                <a class="btn btn-success" id="btn4Next"><i class="fa-solid fa-floppy-disk"></i> Submit</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md">
+
+    </div>
+    <div class="col-md-8 me-5">
+        <div class="card collapse" id="card5">
+            <div class="card-header">
+
+            </div>
+            <div class="card-body">
+                <h3 class="">Applicant ID</h3>
+                <p class="text-muted">Find below your Application Id.</p>
+                <p class="text-muted">Use it to track your application when placement results are out.</p>
+                <div class="mb-3">
+                   <input type="email" class="form-control" id="floatingInput" placeholder="A23102" readonly>
+                   <label for="floatingInput"></label>
+                </div>
+            </div>
+            <div class="card-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script>
+        $(document).ready(function(){
+            $('#btn1Next').click(function(){
+                $('#card1').hide();
+                $('#card2').show();
+            });
+            $('#btn2Next').click(function(){
+                $('#card2').hide();
+                $('#card3').show();
+            });
+            $('#btn3Next').click(function(){
+                $('#card3').hide();
+                $('#card4').show();
+            });
+            $('#btn4Next').click(function(){
+                $('#card4').hide();
+                $('#card5').show();
+            });
+                $('#btn5Next').click(function(){
+                    $('#card5').hide();
+                    $('#card6').show();
+                });
+        });
+    </script>
+}
